@@ -2,12 +2,27 @@
     box-sizing: border-box;
 }
 
-.trending-cities-anchor {
-    display: inline-block;
-    height: 18rem;
+/* * Element Selectors * */
+
+
+/* * Class Selectors * */
+.jumbotron {
+    background: url("../img/jumbotron-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 65rem;
 }
 
-.testing {
-    width: 100%;
-    height: 100%;
+.card {
+    border: none;
+}
+
+.content-col {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}   
+
+/** ID Selectors **/
+#form-div {
+    margin: 26rem auto;
 }
