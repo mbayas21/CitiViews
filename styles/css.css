@@ -6,6 +6,7 @@
 
 
 /* * Class Selectors * */
+
 .jumbotron {
     background: url("../img/jumbotron-background.jpg");
     background-size: cover;
@@ -23,6 +24,19 @@
 }   
 
 /** ID Selectors **/
+@media(min-width: 35.9375rem) {
+    #navBar {
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: 35.9375rem) {
+    #mobile-branding {
+        display: none;
+        color: red;
+    }
+}
+
 #form-div {
     margin: 26rem auto;
 }
