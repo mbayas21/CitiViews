@@ -4,6 +4,7 @@
   "description": "Git and NPM",
   "main": "index.html",
   "scripts": {
+    "imagemin": "imagemin img/* -o dist/img",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lite",
     "lite": "lite-server"
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/mbayas21/CitiViews#readme",
   "devDependencies": {
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.5.4"
   },
   "dependencies": {
