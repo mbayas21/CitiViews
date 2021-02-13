@@ -4,7 +4,6 @@
 
 /* * Element Selectors * */
 
-
 /* * Class Selectors * */
 
 .jumbotron {
@@ -12,6 +11,12 @@
     background-size: cover;
     background-position: center;
     height: 65rem;
+}
+
+.thin-bottom-border {
+    border-bottom: 0.5px ridge;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 .card {
