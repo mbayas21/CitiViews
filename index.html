@@ -13,16 +13,18 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
         <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300" rel="stylesheet">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="styles/css.css" type="text/css">
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-sm navbar-light justify-content-center pb-3" id="navBar">
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-between pb-3" id="navBar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationCollapse">
                 <i class="navbar-toggler-icon"></i>
             </button>
-            <a href="" class="navbar-brand" id="mobile-branding">CitiViews</a>
+            <a href="index.html" class="navbar-brand" id="mobile-branding">CitiViews</a>
             <div class="collapse navbar-collapse justify-content-center" id="navigationCollapse">
                 <ul class="navbar-nav">
                     <a href="" class="navbar-brand">CitiViews</a>
@@ -37,7 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="collapse navbar-collapse justify-content-center id="navigationCollapse">
+            <div class="collapse navbar-collapse justify-content-center" id="navigationCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item px-2">
                         <a href="" class="nav-link" data-toggle="modal" data-target="#signUpModal">
@@ -97,7 +99,7 @@
 
         <header class="jumbotron jumbotron-fluid bg-dark">
             <div id="form-div">
-                <h1 class="text-center text-white">Find a city to visit:</h1>
+                <h1 class="text-center text-white" id="testing">Find a city to visit:</h1>
                 <p class="text-center text-white">Search a city below for your next adventure experience</p>
                 <form action="" class="form-inline justify-content-center">
                     <input type="text" placeholder="search" class="form-control mr-sm-2 mr-lg-5">
@@ -107,42 +109,50 @@
         </header>
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col text-center mb-5">
+            <div class="row mb-0">
+                <div class="col text-center">
                     <h1>Trending Cities</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 content-col">
-                    <div class="card">
+            <div class="row mt-0">
+                <div class="col-lg-4 content-col">
+                    <div class="card cards">
                         <a href="charleston.html">
                             <img class="img-fluid rounded img-thumbnail" src="img/charleston-md.jpg" alt="Picture of Charleston">
                         </a>
                         <div class="card-body">
                             <h1 class="text-center card-title">Charleston, SC</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, vero?</p>
+                            <p class="card-text text-center lead city-desc-par">Founded in 1670, Charleston is one of the oldest cities in the United States. Come visit it's Historic District where you will find 
+                                many preserved historic buiuldings and monuments, such as the Fort Sumter National Monument, dating all the way back to the 17th and 18th centuries.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 content-col">
-                    <div class="card">
+                <div class="col-lg-4 content-col">
+                    <div class="card cards">
                         <a href="seattle.html">
                             <img class="img-fluid rounded img-thumbnail" src="img/seattle-md.jpg" alt="Picture of Seattle">
                         </a>
                         <div class="card-body">
                             <h1 class="text-center card-title">Seattle, WA</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, vero?</p>
+                            <p class="card-text text-center lead city-desc-par">Starbucks, Microsoft and Amazon. All call Seattle home. If you're a fan of the rain, here you will find an average of 
+                                150 rainy days per year. If not, you will still get to enjoy amazing weather during the spring and summer time. Come and enjoy some of the top destinations like the Seattle Space
+                                Needle and the Pike Place Market. And don't forget the coffee...
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 content-col">
-                    <div class="card">
+                <div class="col-lg-4 content-col">
+                    <div class="card cards">
                         <a href="charlotte.html">
                             <img class="img-fluid rounded img-thumbnail" src="img/Charlotte-1.jpg" alt="Picture of Charlotte">
                         </a>
                         <div class="card-body">
                             <h1 class="text-center card-title">Charlotte, NC</h1>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, vero?</p>
+                            <p class="card-text text-center lead city-desc-par">Charlotte. Not a city many have on their list of destinations. But that is quickly changing. As one of the fastest growing cities
+                                in the United States during the last 20 years, Charlotte has grown from a small Southern town to now being of the largest cities in the country. Visitors of Charlotte can find many popular attractions,
+                                such as the U.S National Whitewater Center or visit over the 30 local breweries in the area.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,11 @@
 
 /* * Element Selectors * */
 
+body {
+    font-family: 'Newsreader', serif;
+    color: black;
+    background-color: #deeaee;
+}
 /* * Class Selectors * */
 
 .jumbotron {
@@ -23,10 +28,20 @@
     border: none;
 }
 
+.cards {
+    height: 40rem;
+    padding: 1.5rem;
+}
+
 .content-col {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}   
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+} 
+
+.city-desc-par {
+    font-size: 1rem;
+    font-weight: 200;
+}
 
 /** ID Selectors **/
 @media(min-width: 35.9375rem) {
@@ -44,4 +59,9 @@
 
 #form-div {
     margin: 26rem auto;
+    color: red;
+}
+
+#testing {
+    color: red;
 }
