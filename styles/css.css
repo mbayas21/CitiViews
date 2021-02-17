@@ -56,6 +56,9 @@ body {
         color: red;
     }
 }
+#navBar {
+    background-color: white;
+}
 
 #form-div {
     margin: 26rem auto;
