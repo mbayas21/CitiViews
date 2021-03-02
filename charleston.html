@@ -17,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="styles/css.css" type="text/css">
+        <link rel="stylesheet" href="styles/cities.css" type="text/css">
     </head>
     <body>
 
@@ -62,8 +63,19 @@
 
         <div class="container">
             <div class="row">
+                <div class="col mt-3">
+                    <div class="d-flex justify-content-end">
+                        <i class="fa fa-umbrella align-self-center"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-end">
+                            <i class="temp">70<span>&#176;</span></i>
+                            <i class="temp">58<span>&#176;</span></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <h1 class="text-center my-5">Explore Charleston</h1>
+                    <h1 class="text-center my-5 display-4">Welcome to Charleston</h1>
                 </div>
             </div>
             <div class="row">
@@ -71,7 +83,7 @@
                     <div class="media">
                         <div class="media-body">
                             <a href=""><img class="img-fluid" src="img/charleston-bridge.jpg" alt="Picture of Charleston Bridge"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, vero?</p>
+                            <p class="text-muted text-center py-3">Arthur Ravenel Jr. Bridge</p>
                         </div>
                     </div>
                 </div>
@@ -102,19 +114,19 @@
                             <span class="sr-only">Next</span>
                           </a>
                     </div>
-                    <h1 class="text-center">Explore Charleston</h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor, aliquam suscipit enim quae quod.</p>
+                    <h1 class="text-center py-3">Explore Charleston</h1>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container my-4">
             <div class="row">
                 <div class="d-flex flex-column col-12 align-items-center">
                     <h3>Leave a Review</h3>
                     <p>Charleston</p>
-                    <form action="">
+                    <form action="" class="d-flex flex-column">
                         <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn btn-outline-primary mx-auto mt-2">Submit</button>
                     </form>
                 </div>
             </div>

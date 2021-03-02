@@ -17,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="styles/css.css" type="text/css">
+        <link rel="stylesheet" href="styles/cities.css" type="text/css">
     </head>
     <body>
 
@@ -62,8 +63,19 @@
 
         <div class="container">
             <div class="row">
+                <div class="col mt-3">
+                    <div class="d-flex justify-content-end">
+                        <i class="fa fa-umbrella align-self-center"></i>
+                        <div class="d-flex flex-column justify-content-center align-items-end">
+                            <i class="temp">55<span>&#176;</span></i>
+                            <i class="temp">35<span>&#176;</span></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
-                    <h1 class="text-center my-5">Explore Seattle</h1>
+                    <h1 class="text-center my-5 display-4">Welcome to Seattle</h1>
                 </div>
             </div>
             <div class="row">
@@ -71,12 +83,13 @@
                     <div class="media">
                         <div class="media-body">
                             <a href=""><img class="img-fluid" src="img/seattle-observatory.jpg" alt="Picture of Seattle SkyView Observatory"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, vero?</p>
+                            <p class="text-muted text-center py-3">Seattle Space Needle</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center">
                     <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <h1 class="text-center py-3 explore-city-title">Explore what Seattle has to offer</h1>
                         <ol class="carousel-indicators">
                             <li data-target="#carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel" data-slide-to="1"></li>
@@ -102,19 +115,18 @@
                             <span class="sr-only">Next</span>
                           </a>
                     </div>
-                    <h1 class="text-center">Explore Seattle</h1>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor, aliquam suscipit enim quae quod.</p>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container my-4">
             <div class="row">
                 <div class="d-flex flex-column col-12 align-items-center">
                     <h3>Leave a Review</h3>
                     <p>Charleston</p>
-                    <form action="">
+                    <form action="" class="d-flex flex-column">
                         <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn btn-outline-primary mx-auto mt-2">Submit</button>
                     </form>
                 </div>
             </div>
@@ -124,26 +136,28 @@
             <h1 class="text-center my-3 py-3">Featured Seattle Events</h1>
             <div class="row thin-bottom-border">
                 <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="img/white-water-center-ice-skii.jpg" alt="" class="img-fluid">
-                                    <p>White Water Center Skii</p>
-                                </div>
-                            </div>
+                    <div class="card cities-events-cards">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <img src="img/white-water-center-ice-skii.jpg" alt="" class="img-fluid">
+                            <p class="text-center lead pt-3">White Water Center Skii</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="img/camp-north-end.JPG" alt="" class="img-fluid">
-                                    <p>White Water Center Skii</p>
-                                </div>
-                            </div>
+                    <div class="card cities-events-cards">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <img src="img/camp-north-end.JPG" alt="" class="img-fluid">
+                            <p class="text-center lead pt-3">Camp North End Drive in Movie</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                            <div class="card-body">
-                                <img src="img/south-end-rail-trail-lights.jpg" alt="" class="img-fluid">
-                                <p>White Water Center Skii</p>
-                            </div>
+                    <div class="card cities-events-cards">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <img src="img/south-end-rail-trail-lights.jpg" alt="" class="img-fluid">
+                            <p class="text-center lead pt-3">South End "I Heart Rail Trail"</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -190,6 +204,7 @@
         </div>
 
         <footer>
+
         </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
